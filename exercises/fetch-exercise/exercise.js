@@ -19,9 +19,9 @@ a different greeting should be displayed in the box.
 
 fetch("https://holy-snow-6805.fly.dev/api/greetings")
   .then(function (response) {
-    return response.text();
+    return response.json();
   })
   .then(function (greeting) {
     // Write the code to display the greeting text here
-    document.querySelector("#greeting-text").innerHTML = greeting;
+    document.querySelector("#greeting-text").innerHTML = greeting.hello;
   });
