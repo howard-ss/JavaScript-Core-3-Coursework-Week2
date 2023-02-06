@@ -24,4 +24,5 @@ fetch("https://holy-snow-6805.fly.dev/api/greetings")
   .then(function (greeting) {
     // Write the code to display the greeting text here
     document.querySelector("#greeting-text").innerHTML = greeting.hello;
-  });
+  })
+  .catch(err => console.log(err));
