@@ -26,3 +26,18 @@ fetch("https://holy-snow-6805.fly.dev/api/greetings")
     document.querySelector("#greeting-text").innerHTML = greeting.hello;
   })
   .catch(err => console.log(err));
+
+
+  //CYF 's solution as following: 
+  /**
+   * const greetingParagraph = document.querySelector('#greeting-text');
+     const apiURL = 'https://codeyourfuture.herokuapp.com/api/greetings';
+
+  fetch(apiURL)
+  .then(function (response) {
+    return response.text();
+  })
+  .then(function (greeting) {
+    greetingParagraph.innerText = greeting;
+  });
+   */
